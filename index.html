@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Alunos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <p class="eyebrow">Projetos de Desenvolvimento de Sistemas</p>
+      <h1>Cadastro de Alunos</h1>
+      <p class="subtitle">Cadastre, visualize e remova alunos.</p>
+
+      <form id="form-aluno" class="formulario">
+        <div class="campo">
+          <label for="campo-nome">Nome completo</label>
+          <input type="text" id="campo-nome" placeholder="Digite o nome do aluno" required>
+        </div>
+
+        <div class="campo">
+          <label for="campo-curso">Curso</label>
+          <input type="text" id="campo-curso" placeholder="Digite o curso" required>
+        </div>
+
+        <div class="campo">
+          <label for="campo-ra">RA</label>
+          <input type="text" id="campo-ra" placeholder="Digite o RA" required>
+        </div>
+
+        <button type="submit">Cadastrar aluno</button>
+      </form>
+    </section>
+
+    <section class="card tabela-card">
+      <div class="cabecalho-tabela">
+        <div>
+          <p class="eyebrow">Registros salvos</p>
+          <h2>Alunos cadastrados</h2>
+        </div>
+      </div>
+
+      <p id="sem-registros" class="aviso">Nenhum aluno cadastrado.</p>
+
+      <div class="tabela-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Curso</th>
+              <th>RA</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody id="corpo-tabela"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
