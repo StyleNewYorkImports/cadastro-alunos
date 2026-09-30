@@ -37,7 +37,7 @@ SELECT * FROM CURSO;
 SELECT * FROM MATRICULA;
 ```
 
-O H2 está configurado em memória (`create-drop`), então os dados de teste são apagados quando a aplicação é encerrada.
+Na primeira inicialização, o sistema cria um aluno, um curso e uma matrícula de exemplo para facilitar a demonstração no H2. O aluno de exemplo também tem RG. O H2 está configurado em memória (`create-drop`), então esses dados são apagados quando a aplicação é encerrada.
 
 ## Funcionalidades
 
